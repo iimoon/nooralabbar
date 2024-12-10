@@ -39,7 +39,6 @@ const Carousel = ({ images, texts, isStatic = false }) => {
           ))}
         </Slider>
       )}
-      {/* Persistent text */}
       <div className="carousel-text-container">
         <div className="carousel-text">
           <h1>{texts[0]?.heading}</h1>
