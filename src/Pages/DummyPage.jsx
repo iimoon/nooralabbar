@@ -95,7 +95,7 @@ const DummyPage = () => {
           <CTASection/>
         </div>
         <div className="about-section">
-
+        
         </div>
       </div>
     </>
