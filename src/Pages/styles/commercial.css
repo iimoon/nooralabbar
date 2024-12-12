@@ -1,0 +1,40 @@
+.text-service-container{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 70%;
+    font-size: 32px;
+}
+.text-section ul{
+    padding-left: 30px;
+}
+.text-section li{
+    font-family: Roboto;
+    font-size: 32px;
+    color: #494646;
+}
+
+#mainheader{
+    font-family: Raleway;
+    font-size: 48px;
+    color: #8DC63F;
+}
+#mainsub{
+    font-family: Roboto;
+    color:#494646
+}
+#subhead{
+    font-family: Roboto;
+}
+.service-section{
+    position: absolute;
+}

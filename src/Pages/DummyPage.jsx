@@ -21,6 +21,7 @@ import YASRG from "../assets/logos/clients/YASRG.jpg";
 import CTASection from "../Components/CTASection";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
+import Footer from "../Components/Footer"
 
 const DummyPage = () => {
   const homeImages = [img1, img2, img3];
@@ -191,30 +192,30 @@ const DummyPage = () => {
           </div>
         </div>
         <div className="clients-section">
-  <h1>OUR MAJOR CLIENTS AND SUPPLIES</h1>
-  <div className="clients-container">
-    <div className="clients-wrapper">
-      <img src={cred} alt="Cred" />
-      <img src={credance} alt="Credance" />
-      <img src={dps} alt="DPS" />
-      <img src={international} alt="International" />
-      <img src={mapie} alt="Mapie" />
-      <img src={qcon} alt="Qcon" />
-      <img src={YASRG} alt="YASRG" />
-      <img src={cred} alt="Cred" />
-      <img src={credance} alt="Credance" />
-      <img src={dps} alt="DPS" />
-      <img src={international} alt="International" />
-      <img src={mapie} alt="Mapie" />
-      <img src={qcon} alt="Qcon" />
-      <img src={YASRG} alt="YASRG" />
-    </div>
-  </div>
-  <div className="contact-section">
-    <ContactForm/>
-  </div>
-</div>
-
+          <h1>OUR MAJOR CLIENTS AND SUPPLIES</h1>
+          <div className="clients-container">
+            <div className="clients-wrapper">
+              <img src={cred} alt="Cred" />
+              <img src={credance} alt="Credance" />
+              <img src={dps} alt="DPS" />
+              <img src={international} alt="International" />
+              <img src={mapie} alt="Mapie" />
+              <img src={qcon} alt="Qcon" />
+              <img src={YASRG} alt="YASRG" />
+              <img src={cred} alt="Cred" />
+              <img src={credance} alt="Credance" />
+              <img src={dps} alt="DPS" />
+              <img src={international} alt="International" />
+              <img src={mapie} alt="Mapie" />
+              <img src={qcon} alt="Qcon" />
+              <img src={YASRG} alt="YASRG" />
+            </div>
+          </div>
+          <div className="contact-section">
+            <ContactForm />
+          </div>
+        </div>
+        <Footer/>
       </div>
     </>
   );
