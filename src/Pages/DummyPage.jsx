@@ -20,6 +20,7 @@ import qcon from "../assets/logos/clients/qcon.jpg";
 import YASRG from "../assets/logos/clients/YASRG.jpg";
 import CTASection from "../Components/CTASection";
 import Navbar from "../Components/Navbar";
+import ContactForm from "../Components/ContactForm";
 
 const DummyPage = () => {
   const homeImages = [img1, img2, img3];
@@ -208,6 +209,9 @@ const DummyPage = () => {
       <img src={qcon} alt="Qcon" />
       <img src={YASRG} alt="YASRG" />
     </div>
+  </div>
+  <div className="contact-section">
+    <ContactForm/>
   </div>
 </div>
 
