@@ -1,0 +1,163 @@
+.servicesContainer {
+  margin-top: 60px;
+  background: #e7e6e6;
+  padding: 20px;
+}
+
+#serviceHeader {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.serviceCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 370px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card img {
+  height: 190px;
+  width: 300px;
+}
+#cardHead {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: bold;
+  color: #8dc63f;
+  margin-top: 10px;
+  height: 30px;
+}
+#cardBody {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.galleryPc {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+#galleryHeader {
+  font-size: 32px;
+  font-family: Raleway;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.galleryPcContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.CTASection {
+  margin-bottom: 30px;
+}
+.galleryMobileContainer {
+  display: none;
+}
+@media (max-width: 480px) {
+  #serviceHeader {
+    font-size: 24px;
+  }
+  #cardHead {
+    font-size: 16px;
+  }
+  #cardBody {
+    font-size: 14px;
+  }
+  #galleryHeader {
+    font-size: 24px;
+  }
+  .galleryPcContainer {
+    display: none;
+  }
+  .galleryMobileContainer {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .sliderContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Adjusts to the container or viewport width */
+    max-width: 400px; /* Slider max-width to center it nicely */
+    margin: 0 auto; /* Centers the slider horizontally */
+    height: 340px; /* Adjust slightly larger than image height for padding or spacing */
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide img {
+    width: 400px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensures image fits the defined dimensions */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  }
+  
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  
+  .dotsContainer div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+  
+  .dotsContainer div.activeDot {
+    background-color: black;
+  }
+  
+  .dotsContainer div.inactiveDot {
+    background-color: lightgray;
+  }
+  
+}
