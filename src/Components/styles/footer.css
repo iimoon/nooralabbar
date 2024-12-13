@@ -1,4 +1,4 @@
-/* Footer.css */
+
 .footer {
     background-color: #1a1a1a;
     color: #fff;
@@ -86,7 +86,7 @@
     margin-right: 5px;
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 768px) {
     .footer .desktop{
         display: none;

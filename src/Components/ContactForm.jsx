@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <div className="contact-container">
       <div className="form-section">
-        <h2 className="heading">Get Started with a Quotation</h2>
+        <h2 className="heading-c">Get Started with a Quotation</h2>
         <p className='text-form'>We are always happy to help!</p>
         <form className="form">
           <input

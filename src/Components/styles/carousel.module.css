@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Inside carousel.module.css */
+
+/* Global styles for react-slick classes */
+:global(.slick-dots) {
+  position: absolute;
+  bottom: 20px; /* Adjust positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+:global(.slick-dots li) {
+  display: inline-block;
+  list-style-type: none;
+}
+
+:global(.slick-dots li button::before) {
+  content: ''; /* This removes the numbers */
+}
+
+:global(.slick-dots li button) {
+  background: none;
+  border: none;
+  color: transparent; /* Remove any text */
+  font-size: 18px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+:global(.slick-dots li.slick-active button) {
+  background-color: #8DC63F;
+  opacity: 1;
+}
+
+--green {
+  color: #8DC63F;
+}
+
+#green {
+  color: #8DC63F;
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselSlide img,
+.staticBanner img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.carouselTextContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Ensures the carousel controls can still be clicked */
+}
+
+.carouselText {
+  font-family: Raleway;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  max-width: 50%;
+  pointer-events: all; /* Ensures the text is interactive */
+}
+
+.slickDots {
+  top: 500px;
+}
+
+.slickDots li button {
+  color: white;
+  background: none;
+}
+
+.slickDots li button::before {
+  color: white;
+}
+
+.slickDots li.slick-active button {
+  color: #8DC63F;
+}
+
+.carouselText h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.carouselText p {
+  font-size: 1.2rem;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary {
+  background-color: #8DC63F;
+  color: rgb(0, 0, 0);
+  border-radius: 12px;
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+.btnPrimary:hover {
+  background-color: #28a428;
+}
+
+.btnSecondary {
+  background-color: white;
+  font-family: Raleway;
+  font-weight: bold;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 12px;
+}
+
+.btnSecondary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  .carouselText {
+    max-width: 70%;
+    bottom: 15%;
+    left: 5%;
+  }
+
+  .carouselText h1 {
+    font-size: 1rem;
+  }
+
+  .carouselText p {
+    font-size: 1rem;
+  }
+
+  .buttonGroup {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  :global(.slick-dots) {
+    bottom: 5px;  /* Adjust bottom spacing */
+  }
+  
+  :global(.slick-dots li button) {
+    width: 10px;   /* Smaller dots for tablets */
+    height: 10px;  /* Smaller dots for tablets */
+  }
+  .carouselText {
+    width: 60%;
+  }
+  .carouselText h1 {
+    font-size: 21px;
+  }
+
+  .slickDots {
+    top: 250px;
+  }
+
+  .carouselSlide img,
+  .staticBanner img {
+    width: 540px;
+    height: 245px;
+    object-fit: cover;
+  }
+
+  .carouselText p {
+    font-size: 11px;
+  }
+  .btnPrimary,
+  .btnSecondary {
+    border-radius: 6px;
+    padding: 8px;
+    border: none;
+    font-size: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .carouselSlide img,
+  .staticBanner img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+  }
+}

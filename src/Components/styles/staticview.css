@@ -16,7 +16,7 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  color: #7fc241; /* Green color */
+  color: #7fc241; 
 }
 
 .subheading {
@@ -70,7 +70,7 @@
   background-color: #eaeaea;
 }
 
-/* Responsive Styling */
+
 @media (max-width: 768px) {
   .static-image-view {
     height: 210px;
@@ -84,6 +84,8 @@
 
   .subheading {
     font-size: 11px;
+    margin-top: 10px;
+    text-align: center;
   }
 
 

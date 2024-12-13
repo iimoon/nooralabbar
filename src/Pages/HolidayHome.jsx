@@ -5,7 +5,6 @@ import StaticImageView from "../Components/StaticImageView";
 import ServiceView from "../Components/ServiceView";
 import holidayBanner from "../assets/images/banners/holiday.png";
 import hehe from "../assets/images/holiday/image.png";
-import tick from "../assets/icons/tick-circle.png";
 import CTASection from "../Components/CTASection";
 import Footer from "../Components/Footer";
 
@@ -15,7 +14,7 @@ const HolidayHome = () => {
       <Navbar />
       <StaticImageView
         image={holidayBanner}
-        heading="Holiday Home Services"
+        heading="Holiday Home Service"
         subheading="Elevate Your Holiday Home Experience!"
         buttons={[
           { text: "Get a Free Quote", link: "#", type: "primary" },

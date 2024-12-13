@@ -1,5 +1,5 @@
 import React from "react";
-import  "./styles/commercial.css"
+import "./styles/commercial.css";
 import ServiceView from "../Components/ServiceView";
 import Navbar from "../Components/Navbar";
 import StaticImageView from "../Components/StaticImageView";
@@ -25,7 +25,7 @@ const CommercialCleaning = () => {
       <Navbar />
       <StaticImageView
         image={CommercialBanner}
-        heading="Professional Commercial Cleaning Services"
+        heading="Professional Commercial Cleaning "
         subheading="Keeping your workspace Pristine and Productive"
         buttons={[
           { text: "Get a Free Quote", link: "#", type: "primary" },
@@ -59,7 +59,10 @@ const CommercialCleaning = () => {
             </div>
           </div>
           <div className="service-section">
-            <ServiceView id="servicesection "highlightService="Commercial Cleaning" />
+            <ServiceView
+              id="servicesection "
+              highlightService="Commercial Cleaning"
+            />
           </div>
         </div>
         <div className="service-overview">

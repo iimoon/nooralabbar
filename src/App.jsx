@@ -10,10 +10,12 @@ import CommercialBanner from "./assets/images/banners/commercial.png";
 import BuildingMaintenance from "./Pages/BuildingMaintenance";
 import Demolition from "./Pages/Demolition";
 import HolidayHome from "./Pages/HolidayHome";
+import FacilitiesManagement from "./Pages/FacilitiesManagement";
+import Test from "./Pages/Test";
 function App() {
   return (
     <>
-      <HolidayHome/>
+      <FacilitiesManagement/>
     </>
   );
 }

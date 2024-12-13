@@ -1,0 +1,66 @@
+.serviceContainer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 100px;
+    background: #b0afaf;
+    margin-bottom: 30px;
+}
+#serviceHeader{
+    font-family: Roboto;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.servicesContainer{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.serviceCard{
+    width: 30%;
+    height: 150px;
+}
+#serviceCardHeader{
+    font-family: Roboto;
+    font-size: 26px;
+}
+#serviceCardBody{
+    font-weight: 500;
+    color: rgb(64, 63, 63);
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.CTASection{
+    margin-bottom: 30px;
+}
+
+@media(max-width:480px){
+    .serviceContainer{
+        margin-top: 15px;
+        padding-left: 20px;
+    }
+    #serviceHeader{
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .servicesContainer{
+        gap:5px;
+        flex-wrap: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .serviceCard{
+        width: 100%;
+        height: 45px;
+    }
+    #serviceCardHeader{
+        font-size: 13px;
+    }
+    #serviceCardBody{
+        font-size: 10px;
+    }
+}

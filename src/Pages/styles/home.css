@@ -4,9 +4,9 @@
 .services-container {
   padding-top: 10px;
   position: relative;
-  height: auto; /* Allow it to adjust based on content height */
+  height: auto; 
   background-color: #e7e6e6;
-  padding-bottom: 40px; /* Add some padding at the bottom */
+  padding-bottom: 40px; 
 }
 
 .services-text {
@@ -21,7 +21,7 @@
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px; /* Adjusted to create spacing */
+  margin-top: 40px; 
 }
 
 #service-main {
@@ -43,12 +43,12 @@
   grid-template-columns: repeat(
     auto-fit,
     minmax(300px, 1fr)
-  ); /* Flexibility with automatic column adjustment */
+  ); 
   gap: 20px;
   margin: 40px auto;
   width: 90%;
   max-width: 1200px;
-  justify-items: center; /* Ensures centering */
+  justify-items: center; 
 }
 
 .service-card {
@@ -247,7 +247,8 @@ ul {
   }
 }
 
-/* Mobile-specific styles */
+
+
 @media (max-width: 768px) {
   .divider {
     margin-top: 10px;
@@ -257,16 +258,16 @@ ul {
     padding-top: 20px;
   }
   #service-main {
-    font-size: 24px; /* Adjust font size for mobile */
+    font-size: 24px;
   }
 
   #service-sub {
-    font-size: 14px; /* Adjust font size for mobile */
+    font-size: 14px; 
     text-align: center;
   }
 
   .services-card-container {
-    width: 95%; /* Ensure full width */
+    width: 95%; 
     margin: 20px auto;
     justify-items: center;
   }

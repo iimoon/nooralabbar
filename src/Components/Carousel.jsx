@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick"; // Install with `npm install react-slick slick-carousel`
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./styles/carousel.css";
+import styles from "./styles/carousel.module.css";
 
 const Carousel = ({ images, texts, isStatic = false }) => {
   const settings = {
@@ -17,35 +17,35 @@ const Carousel = ({ images, texts, isStatic = false }) => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className={styles.carouselContainer}>
       {isStatic ? (
-        <div className="static-banner">
-          <img src={images[0]} alt="Static Banner" className="responsive-image" />
-          <div className="carousel-text">
+        <div className={styles.staticBanner}>
+          <img src={images[0]} alt="Static Banner" className={styles.responsiveImage} />
+          <div className={styles.carouselText}>
             <h1>{texts[0]?.heading}</h1>
             <p>{texts[0]?.subheading}</p>
-            <div className="button-group">
-              <button className="btn-primary">Get a Free Quote</button>
-              <button className="btn-secondary">Explore Services</button>
+            <div className={styles.buttonGroup}>
+              <button className={styles.btnPrimary}>Get a Free Quote</button>
+              <button className={styles.btnSecondary}>Explore Services</button>
             </div>
           </div>
         </div>
       ) : (
         <Slider {...settings}>
           {images.map((image, index) => (
-            <div key={index} className="carousel-slide">
-              <img src={image} alt={`Slide ${index + 1}`} className="responsive-image" />
+            <div key={index} className={styles.carouselSlide}>
+              <img src={image} alt={`Slide ${index + 1}`} className={styles.responsiveImage} />
             </div>
           ))}
         </Slider>
       )}
-      <div className="carousel-text-container">
-        <div className="carousel-text">
+      <div className={styles.carouselTextContainer}>
+        <div className={styles.carouselText}>
           <h1>{texts[0]?.heading}</h1>
           <p>{texts[0]?.subheading}</p>
-          <div className="button-group">
-            <button className="btn-primary">Get a Free Quote</button>
-            <button className="btn-secondary">Explore Services</button>
+          <div className={styles.buttonGroup}>
+            <button className={styles.btnPrimary}>Get a Free Quote</button>
+            <button className={styles.btnSecondary}>Explore Services</button>
           </div>
         </div>
       </div>
