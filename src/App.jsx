@@ -9,10 +9,11 @@ import DummyPage from "./Pages/DummyPage";
 import CommercialBanner from "./assets/images/banners/commercial.png";
 import BuildingMaintenance from "./Pages/BuildingMaintenance";
 import Demolition from "./Pages/Demolition";
+import HolidayHome from "./Pages/HolidayHome";
 function App() {
   return (
     <>
-      <Demolition />
+      <HolidayHome/>
     </>
   );
 }

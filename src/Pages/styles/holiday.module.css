@@ -1,0 +1,63 @@
+.specialthang img {
+  position: absolute;
+  top: 898px;
+  left: 120px;
+}
+.break{
+    margin-top: 120px;
+    margin-bottom: 60px;
+    border-bottom: 4px solid #8DC63F;
+    width: 30%;
+    margin-left: 130px;
+}
+.expertiseContainer{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-left: 120px;
+}
+#expertiseHeader{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 32px;
+}
+#expertiseHead{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 30px;
+}
+#expertiseBody{
+    font-family: Roboto;
+    font-size: 26px;
+    color: #494646;
+    margin-bottom: 30px;
+    width: 70%;
+}
+.CTASection{
+    margin-bottom: 30px;
+}
+@media(max-width:480px){
+    .specialthang img{
+        position: absolute;
+        top:450px;
+        left:90px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    .expertiseContainer{
+        padding-left: 40px;
+        gap:10px;
+    }
+    #expertiseHeader{
+        font-size: 24px;
+    }
+    #expertiseHead{
+        font-size: 18px;
+        width: 85%;
+    }
+    #expertiseBody{
+        font-size: 16px;
+        width: 80%;
+    }
+}
