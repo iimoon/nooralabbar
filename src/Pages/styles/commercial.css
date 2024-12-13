@@ -1,26 +1,43 @@
-.text-service-container{
-    
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+*{
+    max-width: 100%;
 }
-
+.text-service-container{
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:20px
+}
+.service-section{
+    width: auto;
+    height: auto;
+}
 .text-section{
     display: flex;
     flex-direction: column;
     gap:30px;
     width: 70%;
     font-size: 32px;
+    margin-bottom: 60px;
 }
-.text-section ul{
-    padding-left: 30px;
-}
-.text-section li{
+
+.point-container{
+    margin-left:20px;
+    align-items: center;
+    display: flex;
+    gap:10px;
+    color:#494646;
     font-family: Roboto;
     font-size: 32px;
-    color: #494646;
+}
+.point-container img{
+    width: 40px;
+    height: 40px;
+}
+#point-text {
+    font-size: 26px;
 }
 
 #mainheader{
@@ -30,11 +47,286 @@
 }
 #mainsub{
     font-family: Roboto;
-    color:#494646
+    color:#494646;
+    font-size: 26px;
 }
 #subhead{
     font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
 }
-.service-section{
-    position: absolute;
+#sub2{
+    
+    font-family: Roboto;
+    color:#494646;
+    font-size: 26px;
+}
+#product-head{
+    margin-left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 32px;
+}
+
+.service-overview{
+    margin-left:  140px;
+    max-width: 100%;
+}
+.service-overview-1{
+    margin-bottom: 80px;
+}
+.service-overview li{
+    color: #494646;
+    font-family: Roboto;
+    font-size: 26px;
+}
+
+.service-overview ul{
+    padding-left:50px;
+    
+}
+
+.product-card img{
+    width: 250px;
+    height: 250px;
+}
+
+.service-overview-2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px; /* Reduced padding */
+    max-width: 60%; /* Ensure it doesn’t exceed viewport width */
+    margin-bottom: 120px;
+    margin-left:180px;
+}
+
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+}
+#description{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+}
+#blue{
+    color: #2E86B5;
+    font-family: Roboto;
+    font-weight: 500;
+    max-width:210px ;
+    text-align: center;
+}
+#green{
+    color: #8DC63F;
+    font-family: Roboto;
+    font-weight: 500;
+    max-width:250px ;
+    text-align: center;
+}
+
+.product-ctg-container{
+    display: flex;
+    gap:30px;
+    margin-bottom: 40px;
+}
+.product-ctg-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    
+}
+.product-ctg-card img{
+    width: 200px;
+    height: 200px;
+}
+#hblue{
+    text-align: center;
+    width: 210px;
+    font-family: Roboto;
+    color: #164ED0;
+    font-size: 16px;
+    font-weight: 600;
+}
+#red{
+    text-align: center;
+    width: 210px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F61212;
+}
+#grey{
+    color: black;
+}
+#hgreen{
+    text-align: center;
+    width: 210px;
+    font-family: Roboto;
+    color: #8DC63F;
+    font-size: 16px;
+    font-weight: 600;
+}
+#redhead{
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 32px;
+    color: #F61212 ;
+}
+#bold{
+    font-weight: bold;
+}
+
+.cta-section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media(max-width: 480px){
+    .text-service-container{
+        max-width: 100%;
+        margin-left: 40px;
+        margin-right: 0px;
+        gap:2px;
+    }
+    .text-section{
+        width: 90%;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .service-section{
+        display: none;
+    }
+    #mainheader{
+        font-size: 24px;
+    }
+    #mainsub{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    #subhead{
+        font-size: 16px;
+    }
+    .point-container{
+        margin-left: 0px;
+    }
+    .point-container img{
+        width: 20px;
+        height: 20px;
+    }
+    #point-text{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .service-overview{
+        margin-left: 40px;
+    }
+    .service-overview ul{
+        padding-left: 20px;
+    }
+    .service-overview li{
+        padding-right: 30px;
+        font-size: 13px;
+    }
+    .service-overview-1{
+        margin-bottom: 40px;
+    }
+    #sub2{
+        font-size: 13px;
+        font-weight: 500;
+        padding-right: 10px;
+    }
+    #product-head{
+        font-size: 16px;
+        margin-left: -20px;
+    }
+    .service-overview-2{
+        gap:10px;
+    }
+    .products-container {
+        max-width: 100%;
+        margin-left:-20px;
+        margin-right: 0;
+        gap: 10px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .product-card{
+        height: 50%;
+        width: 48%;
+        
+    }
+    .product-card img{
+        width: 170px;
+        height: 170px;
+    }
+    #description{
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #blue{
+        color: #2E86B5;
+        font-family: Roboto;
+        font-weight: 500;
+        max-width:170px ;
+        font-size: 10px;
+        text-align: center;
+    }
+    #green{
+        font-size: 10px;
+        color: #8DC63F;
+        font-family: Roboto;
+        font-weight: 500;
+        max-width:170px ;
+        text-align: center;
+    }
+    .product-ctg-container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+        gap:10px;
+        max-width: 100%;
+        margin-left: -20px;
+    }
+    .product-ctg-card{
+        height: 45%;
+        width: 45%;
+    }
+    .product-ctg-card img{
+        width: 170px;
+        height: 170px;
+    }
+    #hblue{
+        font-size: 10px;
+    }
+    #red{
+        font-size: 10px;
+    }
+    #hgreen{
+        font-size: 10px;
+        
+    }
+    #redhead{
+        font-size: 16px;   
+    }
+
 }

@@ -1,18 +1,29 @@
-import React from 'react'
-import "./styles/serviceview.css"
+import React from "react";
+import "./styles/serviceview.css";
 
-const ServiceView = () => {
+const ServiceView = ({ highlightService }) => {
+  const services = [
+    "Commercial Cleaning",
+    "Building Maintenance",
+    "Demolition Service",
+    "Holiday Home Service",
+    "Facilities Management",
+    "Industry-Specific Services",
+  ];
+
   return (
-    <div className='service-container'> 
+    <div className="service-container">
       <h1>Our Services</h1>
-      <h2>Commercial Cleaning</h2>
-      <h2>Building Maintenance</h2>
-      <h2>Demolition Service</h2>
-      <h2>Holiday Home Service</h2>
-      <h2>Facilities Management</h2>
-      <h2>Industry-Specific Services</h2>
+      {services.map((service, index) => (
+        <h2
+          key={index}
+          className={service === highlightService ? "highlighted" : ""}
+        >
+          {service}
+        </h2>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ServiceView
+export default ServiceView;
