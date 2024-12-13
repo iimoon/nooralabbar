@@ -12,10 +12,11 @@ import Demolition from "./Pages/Demolition";
 import HolidayHome from "./Pages/HolidayHome";
 import FacilitiesManagement from "./Pages/FacilitiesManagement";
 import Test from "./Pages/Test";
+import IndustrySpecific from "./Pages/IndustrySpecific";
 function App() {
   return (
     <>
-      <FacilitiesManagement/>
+      <IndustrySpecific/>
     </>
   );
 }
