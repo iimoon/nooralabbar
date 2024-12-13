@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/commercial.css";
+import  "./styles/commercial.css"
 import ServiceView from "../Components/ServiceView";
 import Navbar from "../Components/Navbar";
 import StaticImageView from "../Components/StaticImageView";
