@@ -14,10 +14,11 @@ import FacilitiesManagement from "./Pages/FacilitiesManagement";
 import Test from "./Pages/Test";
 import IndustrySpecific from "./Pages/IndustrySpecific";
 import About from "./Pages/About";
+import ContactUs from "./Pages/ContactUs";
 function App() {
   return (
     <>
-      <About/>
+      <ContactUs/>
     </>
   );
 }
