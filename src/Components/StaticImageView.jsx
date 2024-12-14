@@ -4,7 +4,7 @@ import "./styles/staticview.css";
 const StaticImageView = ({ image, heading, subheading, buttons, targetSectionId }) => {
   const [isSectionAvailable, setIsSectionAvailable] = useState(false);
 
-  // Check if target section exists on mount
+
   useEffect(() => {
     const targetSection = document.getElementById(targetSectionId);
     if (targetSection) {
@@ -13,10 +13,10 @@ const StaticImageView = ({ image, heading, subheading, buttons, targetSectionId 
     } else {
       console.error("Target section not found!");
     }
-  }, [targetSectionId]); // Watch for changes to the targetSectionId
+  }, [targetSectionId]);
 
   const handleButtonClick = (e) => {
-    e.preventDefault(); // Prevent default link behavior
+    e.preventDefault(); 
     if (isSectionAvailable) {
       const targetSection = document.getElementById(targetSectionId);
       if (targetSection) {

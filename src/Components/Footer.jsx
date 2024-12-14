@@ -1,6 +1,6 @@
 // Footer.js
 import React from "react";
-import "./styles/footer.css"; // External CSS file
+import "./styles/footer.css"; 
 import abFLogo from "../assets/logos/alabbarfm.png";
 import abLogo from "../assets/logos/ab.png";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
-  // Fix the typo here: use 'navigate' instead of 'naviagte'
+
   const navigate = useNavigate();
 
   const handleClick = (path) => {
@@ -32,7 +32,7 @@ const Footer = () => {
             <h4>Site Links</h4>
             <ul>
               <li onClick={() => handleClick("")}>Home</li>{" "}
-              {/* Fixed onClick */}
+            
               <li onClick={() => handleClick("services")}>Services</li>
               <li onClick={() => handleClick("about")}>About Us</li>
               <li onClick={() => handleClick("contactus")}>Contact</li>

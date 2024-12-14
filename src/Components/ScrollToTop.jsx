@@ -6,8 +6,8 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      window.scrollTo(0, 0);  // Force scroll to top with a slight delay
-    }, 100);  // Adjust delay time as needed
+      window.scrollTo(0, 0);  
+    }, 100); 
   }, [location]);
 
   return null;

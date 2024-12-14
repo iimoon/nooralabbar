@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";  // Import Link from react-router-dom
+import { Link } from "react-router-dom";  
 import "./styles/Navbar.css";
 import alabbarFMlogo from "../assets/logos/alabbarfm.png";
 import alabbarPhoneLogo from "../assets/logos/ab.png";
@@ -29,16 +29,16 @@ const Navbar = () => {
       <nav className="nav">
         <ul>
           <li>
-            <Link to="/">HOME</Link>  {/* Use Link instead of a tag */}
+            <Link to="/">HOME</Link>  
           </li>
           <li>
-            <Link to="/industryspecific" onClick={toggleSidebar}>SERVICES</Link>  {/* Link to services page */}
+            <Link to="/industryspecific" onClick={toggleSidebar}>SERVICES</Link>  
           </li>
           <li>
-            <Link to="/about" onClick={toggleSidebar}>ABOUT</Link>  {/* Link to about page */}
+            <Link to="/about" onClick={toggleSidebar}>ABOUT</Link>  
           </li>
           <li>
-            <Link to="/contactus" onClick={toggleSidebar}>CONTACT</Link>  {/* Link to contact page */}
+            <Link to="/contactus" onClick={toggleSidebar}>CONTACT</Link>  
           </li>
         </ul>
       </nav>
@@ -59,16 +59,16 @@ const Navbar = () => {
         </button>
         <ul>
           <li>
-            <Link to="/" onClick={toggleSidebar}>HOME</Link>  {/* Link to home page */}
+            <Link to="/" onClick={toggleSidebar}>HOME</Link> 
           </li>
           <li>
-            <Link to="/services" onClick={toggleSidebar}>SERVICES</Link>  {/* Link to services page */}
+            <Link to="/services" onClick={toggleSidebar}>SERVICES</Link>  
           </li>
           <li>
-            <Link to="/about" onClick={toggleSidebar}>ABOUT</Link>  {/* Link to about page */}
+            <Link to="/about" onClick={toggleSidebar}>ABOUT</Link> 
           </li>
           <li>
-            <Link to="/contactus" onClick={toggleSidebar}>CONTACT</Link>  {/* Link to contact page */}
+            <Link to="/contactus" onClick={toggleSidebar}>CONTACT</Link>  
           </li>
         </ul>
         <div className="call-button">
