@@ -30,10 +30,8 @@ const About = () => {
         <div className={styles.divisions}>
             <p id={styles.lblue}>Al Abbar Cleaning Services LLC</p>
             <p id={styles.dblue}>Al Abbar Building Maintenance LLC</p>
-            <p id={styles.red}>Noor Al Abbar Trading</p>
-            <p id={styles.green}>Crystal House Building Cleaning</p>
-            <p id={styles.dpurple}>Al Waqar Demolition</p>
-            <p id={styles.purple}>DS Wrecking and Demolition Works</p>
+            <p id={styles.red}>Noor Al Abbar Trading LLC</p>
+            <p id={styles.dpurple}>Al Waqar Building Demolition</p>
         </div>
       </div>
       <div className={styles.CTASection}>
