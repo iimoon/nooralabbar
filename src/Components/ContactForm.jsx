@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import './styles/contactform.css';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; 
+import React, { useState } from "react";
+import "./styles/contactform.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const apiKey = import.meta.env.VITE_WEB_3_API;
 
@@ -10,7 +12,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    toast.info("Sending..."); 
+    toast.info("Sending...");
 
     const formData = new FormData(event.target);
     formData.append("access_key", apiKey);
@@ -23,10 +25,10 @@ const ContactForm = () => {
       const data = await response.json();
 
       if (data.success) {
-        toast.success("Form Submitted Successfully!"); 
+        toast.success("Form Submitted Successfully!");
         event.target.reset();
       } else {
-        toast.error(`Error: ${data.message}`); 
+        toast.error(`Error: ${data.message}`);
         console.error("Error:", data);
       }
     } catch (error) {
@@ -61,29 +63,47 @@ const ContactForm = () => {
             className="textarea"
             required
           />
-          <button type="submit" className="button">Submit your response</button>
+          <button type="submit" className="button">
+            Submit your response
+          </button>
         </form>
       </div>
 
       <div className="contact-info">
         <h2 className="heading2">Get in touch with us</h2>
         <p className="text">
-          Use our contact form for all information requests or contact us directly
-          using the contact information below.
+          Use our contact form for all information requests or contact us
+          directly using the contact information below.
         </p>
-        <p className="text">Feel free to get in touch with us via email or phone.</p>
+        <p className="text">
+          Feel free to get in touch with us via email or phone.
+        </p>
         <hr />
         <div className="contact-details">
-          <p className="detail-heading">📍Our Office Location</p>
-          <p className="detail-text">Al Khazan Building - Nad Al Hamar Rd</p>
-          <p className="detail-text">Deira, Dubai, UAE</p>
-          <p className="detail-heading">📞Phone (Landline)</p>
-          <p className="detail-text">+123-456-7890</p>
+          <p className="detail-heading">
+            {" "}
+            <FontAwesomeIcon
+              icon={faLocationDot}
+              style={{ color: "red" ,marginRight:"10px" }}
+            />
+            Location
+          </p>
+          <p className="detail-text">Dubai, UAE</p>
+          <p className="detail-heading">
+            {" "}
+            <FontAwesomeIcon
+              icon={faPhone}
+              style={{ color: "#8BC34A",marginRight:"4px" }}
+            />
+            Phone
+          </p>
+          <p className="detail-text">058 289 7467</p>
         </div>
       </div>
 
-      {/* Toast Notification Container */}
-      <ToastContainer toastStyle={{ backgroundColor: "#0B1215",color:"#fff" }} />
+      <ToastContainer
+        toastStyle={{ backgroundColor: "#0B1215", color: "#fff" }}
+      />
     </div>
   );
 };

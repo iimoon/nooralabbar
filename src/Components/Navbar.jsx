@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";  // Import Link from react-router-dom
 import "./styles/Navbar.css";
 import alabbarFMlogo from "../assets/logos/alabbarfm.png";
 import alabbarPhoneLogo from "../assets/logos/ab.png";
@@ -28,62 +29,51 @@ const Navbar = () => {
       <nav className="nav">
         <ul>
           <li>
-            <a href="#home">HOME</a>
+            <Link to="/">HOME</Link>  {/* Use Link instead of a tag */}
           </li>
           <li>
-            <a href="#services">SERVICES</a>
+            <Link to="/industryspecific" onClick={toggleSidebar}>SERVICES</Link>  {/* Link to services page */}
           </li>
           <li>
-            <a href="#about">ABOUT</a>
+            <Link to="/about" onClick={toggleSidebar}>ABOUT</Link>  {/* Link to about page */}
           </li>
           <li>
-            <a href="#contact">CONTACT</a>
+            <Link to="/contactus" onClick={toggleSidebar}>CONTACT</Link>  {/* Link to contact page */}
           </li>
         </ul>
       </nav>
 
-      
       <div className="call-button">
-        <a href="tel:123456789">CALL (123) - 456 -789</a>
+        <a href="tel:123456789">CALL (058) - 289 - 7467</a>
       </div>
 
-      
       <div className="hamburger" onClick={toggleSidebar}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
 
-      
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
         <button className="close-btn" onClick={toggleSidebar}>
           &times;
         </button>
         <ul>
           <li>
-            <a href="#home" onClick={toggleSidebar}>
-              HOME
-            </a>
+            <Link to="/" onClick={toggleSidebar}>HOME</Link>  {/* Link to home page */}
           </li>
           <li>
-            <a href="#services" onClick={toggleSidebar}>
-              SERVICES
-            </a>
+            <Link to="/services" onClick={toggleSidebar}>SERVICES</Link>  {/* Link to services page */}
           </li>
           <li>
-            <a href="#about" onClick={toggleSidebar}>
-              ABOUT
-            </a>
+            <Link to="/about" onClick={toggleSidebar}>ABOUT</Link>  {/* Link to about page */}
           </li>
           <li>
-            <a href="#contact" onClick={toggleSidebar}>
-              CONTACT
-            </a>
+            <Link to="/contactus" onClick={toggleSidebar}>CONTACT</Link>  {/* Link to contact page */}
           </li>
         </ul>
         <div className="call-button">
-          <a href="tel:123456789" onClick={toggleSidebar}>
-            CALL (123) - 456 -789
+          <a href="tel:0582897476" onClick={toggleSidebar}>
+            CALL (058) - 289 - 7476
           </a>
         </div>
       </div>

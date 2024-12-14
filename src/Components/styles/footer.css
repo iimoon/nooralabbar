@@ -1,5 +1,6 @@
 
 .footer {
+  font-family: Roboto;
     background-color: #1a1a1a;
     color: #fff;
     padding: 40px 20px;
@@ -23,25 +24,47 @@
   }
   
   .footer-links, .footer-services, .footer-contact {
-    flex: 1;
+    flex:1;
+    gap:1px;
     margin: 0 10px;
   }
   
   .footer-links h4, .footer-services h4, .footer-contact h4 {
     margin-bottom: 10px;
   }
-  
+  .link-section{
+    display: flex;
+    flex-direction: column;
+  }
   .footer-links ul, .footer-services ul {
     list-style: none;
     padding: 0;
   }
+  .footer-services li:hover{
+      cursor: pointer;
+      color: #91c01f;
+    }
   
+  .footer-links li:hover{
+    cursor: pointer;
+    color: #91c01f;
+  }
   .footer-links li, .footer-services li {
     margin-bottom: 8px;
   }
   
-  .footer-contact p {
-    margin-bottom: 8px;
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+  }
+  .footer-contact a:hover{
+    cursor: pointer;
+    color: #91c01f;
+  }
+  .link-section-ctn{
+    display: flex;
+    gap:5px;
   }
   
   .footer-bottom {
@@ -111,7 +134,11 @@
     .rights p {
         font-size: 12px;
     }
-
+    .link-section-ctn{
+      display: flex;
+      gap:5px;
+      justify-content: center;
+    }
     .footer-links, .footer-services, .footer-contact {
       margin-bottom: 20px;
     }

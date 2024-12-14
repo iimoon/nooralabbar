@@ -14,12 +14,13 @@ const HolidayHome = () => {
       <Navbar />
       <StaticImageView
         image={holidayBanner}
-        heading="Holiday Home Service"
+        heading="Professional Holiday Home Service"
         subheading="Elevate Your Holiday Home Experience!"
         buttons={[
           { text: "Get a Free Quote", link: "#", type: "primary" },
           { text: "Learn More", link: "#", type: "secondary" },
         ]}
+        targetSectionId="line"
       />
       <div className="main-container">
         <div className="text-service-container">

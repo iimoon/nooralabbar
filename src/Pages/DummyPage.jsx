@@ -35,7 +35,7 @@ const DummyPage = () => {
   return (
     <>
       <Navbar />
-      <Carousel images={homeImages} texts={homeText} />
+      <Carousel images={homeImages} texts={homeText} targetSectionId="service-main"/>
       <div className="body-container">
         <div className="services-container">
           <div className="divider"></div>
@@ -135,10 +135,8 @@ const DummyPage = () => {
                 <ul>
                   <li>Al Abbar Cleaning Services LLC</li>
                   <li>Al Abbar Building Maintenance LLC</li>
-                  <li>Noor Al Abbar Trading</li>
-                  <li>Crystal House Building Cleaning</li>
-                  <li>Al Waqar Demolition</li>
-                  <li>DS Wrecking and Demolition Work</li>
+                  <li>Noor Al Abbar Trading LLC</li>
+                  <li>Al Waqar Building Demolition</li>
                 </ul>
               </p>
             </div>

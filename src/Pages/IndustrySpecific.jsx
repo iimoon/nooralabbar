@@ -25,6 +25,7 @@ const IndustrySpecific = () => {
           { text: "Get a Free Quote", link: "#", type: "primary" },
           { text: "Learn More", link: "#", type: "secondary" },
         ]}
+        targetSectionId="line"
       />
       <div className="main-container">
         <div className="text-service-container">

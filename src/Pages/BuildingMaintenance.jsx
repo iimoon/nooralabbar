@@ -23,6 +23,7 @@ const BuildingMaintenance = () => {
           { text: "Get a Free Quote", link: "#", type: "primary" },
           { text: "Learn More", link: "#", type: "secondary" },
         ]}
+        targetSectionId="buidlingmaintenance-service"
       />
       <div className="main-container">
         <div className="text-service-container">
@@ -49,7 +50,7 @@ const BuildingMaintenance = () => {
               <p id="point-text">Transparent and professional service</p>
             </div>
           </div>
-          <div className="service-section">
+          <div id="buidlingmaintenance-service" className="service-section">
             <ServiceView
               id="servicesection "
               highlightService="Building Maintenance"
