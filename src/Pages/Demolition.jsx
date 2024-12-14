@@ -41,7 +41,7 @@ const Demolition = () => {
       <Navbar />
       <StaticImageView
         image={demolitionBanner}
-        heading="Demolition Services"
+        heading="Professional Demolition Services"
         subheading="Expert Solutions for Controlled Demolition Projects of Any Scale"
         buttons={[
           { text: "Get a Free Quote", link: "#", type: "primary" },
