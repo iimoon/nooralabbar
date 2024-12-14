@@ -12,6 +12,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (

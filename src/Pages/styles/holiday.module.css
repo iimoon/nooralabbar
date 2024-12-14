@@ -36,6 +36,18 @@
 .CTASection{
     margin-bottom: 30px;
 }
+@media(max-width:1280px){
+    .specialthang img{
+        top: 920px;
+    }
+}
+@media(max-width:1024px){
+    .specialthang img{
+        top:995px;
+        height: 300px;
+        width: 300px;
+    }
+}
 @media(max-width:480px){
     .specialthang img{
         position: absolute;
