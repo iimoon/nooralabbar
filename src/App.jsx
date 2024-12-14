@@ -15,10 +15,20 @@ import Test from "./Pages/Test";
 import IndustrySpecific from "./Pages/IndustrySpecific";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import toast styles
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
     <>
-      <ContactUs/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="" element={<DummyPage/>}/>
+          
+          <Route path="/services" element={<IndustrySpecific/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

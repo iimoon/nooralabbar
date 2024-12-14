@@ -1,0 +1,41 @@
+--root{
+    --toastify-toast-background: #232222;
+}
+
+.custom-toast-container {
+    z-index: 9999; /* Ensure it stays on top */
+  }
+  
+  /* Customize Toast Notifications */
+  .toastify-toast {
+    background-color: #2e3b4e;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  
+  .toastify-toast-success {
+    background-color: #4caf50 !important;
+    color: white;
+  }
+  
+  .toastify-toast-error {
+    background-color: #f44336 !important;
+    color: white;
+  }
+  
+  .toastify-toast-info {
+    background-color: #2196f3 !important;
+    color: white;
+  }
+  
+  .toastify-toast-warning {
+    background-color: #ff9800 !important;
+    color: white;
+  }
+  
+  /* Add progress bar styling */
+  .toastify-progress-bar {
+    background-color: #ffa500;
+  }
+  
