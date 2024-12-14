@@ -22,8 +22,15 @@ import CTASection from "../Components/CTASection";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
 import Footer from "../Components/Footer"
+import { useNavigate } from "react-router-dom";
 
 const DummyPage = () => {
+
+    const navigate = useNavigate();
+  
+    const handleClick = (path) => {
+      navigate(`/${path}`);
+    };
   const homeImages = [img1, img2, img3];
   const homeText = [
     {
@@ -53,7 +60,7 @@ const DummyPage = () => {
                 Tailored cleaning solutions for offices, clinics, and schools to
                 maintain a healthy workspace.
               </p>
-              <button className="card-button">View Details</button>
+              <button className="card-button" onClick={() => handleClick("commercialcleaning")}>View Details</button>
             </div>
             <div className="service-card">
               <img src={maintenance} alt="Building Maintenance" />
@@ -62,7 +69,7 @@ const DummyPage = () => {
                 Comprehensive maintenance services, including repairs, painting,
                 and minor civil works.
               </p>
-              <button className="card-button">View Details</button>
+              <button className="card-button" onClick={() => handleClick("buildingmaintenance")}>View Details</button>
             </div>
             <div className="service-card">
               <img src={demolition} alt="Demolition Services" />
@@ -71,7 +78,7 @@ const DummyPage = () => {
                 Efficient demolition of high-rise structures, with emphasis on
                 safety and environmental compliance.
               </p>
-              <button className="card-button">View Details</button>
+              <button className="card-button" onClick={() => handleClick("demolition")}>View Details</button>
             </div>
             <div className="service-card">
               <img src={holiday} alt="Holiday Home Services" />
@@ -80,7 +87,7 @@ const DummyPage = () => {
                 Cleaning, maintenance, and guest management services for
                 short-term rental properties.
               </p>
-              <button className="card-button">View Details</button>
+              <button className="card-button" onClick={() => handleClick("holidayhome")}>View Details</button>
             </div>
             <div className="service-card">
               <img src={facilities} alt="Facilities Management" />
@@ -89,7 +96,7 @@ const DummyPage = () => {
                 End-to-end property management solutions to enhance the value of
                 buildings.
               </p>
-              <button className="card-button">View Details</button>
+              <button className="card-button" onClick={() => handleClick("facilitiesmanagement")}>View Details</button>
             </div>
             <div className="service-card">
               <img src={industry} alt="Industry-Specific Services" />
@@ -98,7 +105,7 @@ const DummyPage = () => {
                 Customized cleaning and maintenance solutions tailored to
                 specific industries.
               </p>
-              <button className="card-button">View Details</button>
+              <button className="card-button" onClick={() => handleClick("industryspecific")}>View Details</button>
             </div>
           </div>
         </div>

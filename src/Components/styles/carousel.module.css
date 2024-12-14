@@ -157,7 +157,7 @@
 @media (max-width: 768px) {
 
   .carouselText {
-    max-width: 70%;
+    max-width: 90%;
     bottom: 15%;
     left: 5%;
   }
@@ -192,7 +192,7 @@
     height: 10px;  /* Smaller dots for tablets */
   }
   .carouselText {
-    width: 60%;
+    width: 100%;
   }
   .carouselText h1 {
     font-size: 21px;
@@ -210,14 +210,14 @@
   }
 
   .carouselText p {
-    font-size: 11px;
+    font-size: 16px;
   }
   .btnPrimary,
   .btnSecondary {
     border-radius: 6px;
     padding: 8px;
     border: none;
-    font-size: 7px;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
   }

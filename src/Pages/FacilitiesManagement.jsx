@@ -57,7 +57,7 @@ const FacilitiesManagement = () => {
           <div className="service-section">
             <ServiceView
               id="servicesection "
-              highlightService="Commercial Cleaning"
+              highlightService="Facilities Management"
             />
           </div>
         </div>

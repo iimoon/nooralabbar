@@ -63,7 +63,7 @@ const ContactForm = () => {
             className="textarea"
             required
           />
-          <button type="submit" className="button">
+          <button type="submit" className="button-cf">
             Submit your response
           </button>
         </form>

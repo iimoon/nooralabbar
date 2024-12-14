@@ -255,10 +255,11 @@ ul {
   }
 
   .services-container {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   #service-main {
     font-size: 24px;
+    margin-bottom: 10px;
   }
 
   #service-sub {

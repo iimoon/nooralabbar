@@ -48,28 +48,30 @@
 
 @media (max-width: 480px) {
     .CTA-container {
+        flex-direction: column;
         padding: 5px;
         gap:10px;
+        height: 80px;
     }
 
     .text-container h1 {
-        font-size: 12px; 
+        font-size: 18px; 
         text-align: left;
         padding-left: 10px;
         
     }
 
     .button-container{
+        justify-content: space-evenly;
         gap:12px;
     }
 
     #number{
-        margin-right: -9px;
         border: 3px solid white;
     }
 
     #number, #request {
-        padding: 4px;
-        font-size: 8px;
+        padding: 8px 15px;
+        font-size: 11px;
     }
 }
