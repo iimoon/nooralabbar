@@ -74,8 +74,13 @@
 }
 @media(max-width:770px){
   .industryCardContainer{
-    gap:20px;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:15px;
+}
 }
 @media(max-width:480px){
     .specialthang img{

@@ -36,6 +36,11 @@
 .CTASection{
     margin-bottom: 30px;
 }
+@media(max-width:695px){
+    .expertiseContainer{
+        padding-left: 30px;
+    }
+}
 @media(max-width:1280px){
     .specialthang img{
         top: 920px;
