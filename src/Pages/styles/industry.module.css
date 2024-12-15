@@ -27,7 +27,7 @@
 .industryCardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 120px; /* Space between the cards */
+  gap: 50px; /* Space between the cards */
   text-align: center; /* Center-align text */
 }
 
@@ -67,7 +67,16 @@
 .CTASection{
     margin-bottom: 30px;
 }
-
+@media(max-width:1213px){
+  .specialthang img {
+    display: none;
+  }
+}
+@media(max-width:770px){
+  .industryCardContainer{
+    gap:20px;
+  }
+}
 @media(max-width:480px){
     .specialthang img{
         top:430px;
@@ -75,12 +84,15 @@
         width: 300px;
     }
     .industryContainer{
-        margin-top: 120px;
+        margin-top: 0px;
     }
     .industryCardContainer{
         display: flex;
-        flex-direction: column;
-        gap:30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap:15px;
     }
     .card img{
         height: 50%;
@@ -90,8 +102,8 @@
         font-size: 24px;
     }
     .card{
-        height:150px ;
-        width: 150px;
+        height:80px ;
+        width: 80px;
     }
     #cardTitle{
         font-size: 16px;

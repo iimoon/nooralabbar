@@ -43,9 +43,11 @@
 }
 @media(max-width:1024px){
     .specialthang img{
-        top:995px;
-        height: 300px;
-        width: 300px;
+        display: none;
+    }
+    .break{
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 @media(max-width:480px){

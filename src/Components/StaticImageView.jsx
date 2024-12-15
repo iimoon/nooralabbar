@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./styles/staticview.css";
 
-const StaticImageView = ({ image, heading, subheading, buttons, targetSectionId }) => {
+const StaticImageView = ({ image, heading, subheading, targetSectionId }) => {
   const [isSectionAvailable, setIsSectionAvailable] = useState(false);
-
 
   useEffect(() => {
     const targetSection = document.getElementById(targetSectionId);
@@ -15,8 +14,8 @@ const StaticImageView = ({ image, heading, subheading, buttons, targetSectionId 
     }
   }, [targetSectionId]);
 
-  const handleButtonClick = (e) => {
-    e.preventDefault(); 
+  const handleScrollClick = (e) => {
+    e.preventDefault();
     if (isSectionAvailable) {
       const targetSection = document.getElementById(targetSectionId);
       if (targetSection) {
@@ -30,6 +29,12 @@ const StaticImageView = ({ image, heading, subheading, buttons, targetSectionId 
     }
   };
 
+  const handleRedirectClick = (e) => {
+    e.preventDefault();
+    // Navigate to the contact page
+    window.location.href = "/contactus"; // Replace with the correct URL path
+  };
+
   return (
     <div
       className="static-image-view"
@@ -39,16 +44,12 @@ const StaticImageView = ({ image, heading, subheading, buttons, targetSectionId 
         <h1 className="heading">{heading}</h1>
         <p className="subheading">{subheading}</p>
         <div className="buttons">
-          {buttons.map((button, index) => (
-            <a
-              key={index}
-              href={button.link}
-              className={`button ${button.type}`}
-              onClick={handleButtonClick}
-            >
-              {button.text}
-            </a>
-          ))}
+          <a href="/contact-us" className="button primary" onClick={handleRedirectClick}>
+            Get a Free Quote
+          </a>
+          <a href="#" className="button secondary" onClick={handleScrollClick}>
+            Learn More
+          </a>
         </div>
       </div>
     </div>
