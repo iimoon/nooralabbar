@@ -96,9 +96,8 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-divisions">
             <p>
-              Al Abbar Cleaning | Al Abbar Building Maintenance | Noor Al Abbar
-              Trading | Crystal House Building Cleaning | Al Waqar Demolition |
-              DS Wrecking and Demolition Works
+              Al Abbar Cleaning LLC | Al Abbar Building Maintenance LLC | Noor Al Abbar LLC
+              Trading | Al Waqar Building Demolition 
             </p>
           </div>
         </div>
