@@ -7,6 +7,7 @@ import img3 from "../assets/images/homepage/img3.jpg";
 import commercial from "../assets/images/homepage/services/commercial.png";
 import demolition from "../assets/images/homepage/services/demolition.png";
 import facilities from "../assets/images/homepage/services/facilities.png";
+import trading from "../assets/images/banners/trading.png"
 import holiday from "../assets/images/homepage/services/holiday.png";
 import industry from "../assets/images/homepage/services/industry.png";
 import about from "../assets/images/homepage/about.png";
@@ -35,7 +36,7 @@ const DummyPage = () => {
   const homeText = [
     {
       heading: "Transforming spaces, Enhancing Lives",
-      subheading: `  16+ Years of Expertise in Cleaning, Maintenance and Demolition`,
+      subheading: `  Over 16 Years of Expertise in Cleaning, Maintenance and Demolition`,
     },
   ];
 
@@ -55,7 +56,7 @@ const DummyPage = () => {
           <div className="services-card-container">
             <div className="service-card">
               <img src={commercial} alt="Commercial Cleaning" />
-              <p className="card-header">Commercial Cleaning</p>
+              <p className="card-header">Commercial & Residential Cleaning</p>
               <p className="card-sub">
                 Tailored cleaning solutions for offices, clinics, and schools to
                 maintain a healthy workspace.
@@ -95,6 +96,14 @@ const DummyPage = () => {
               <p className="card-sub">
                 End-to-end property management solutions to enhance the value of
                 buildings.
+              </p>
+              <button className="card-button" onClick={() => handleClick("facilitiesmanagement")}>View Details</button>
+            </div>
+            <div className="service-card">
+              <img src={trading} alt="Trading Products" />
+              <p className="card-header">Trading Products</p>
+              <p className="card-sub">
+              Essential products designed to support seamless cleaning and maintenance solutions.
               </p>
               <button className="card-button" onClick={() => handleClick("facilitiesmanagement")}>View Details</button>
             </div>

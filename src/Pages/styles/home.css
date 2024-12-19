@@ -51,6 +51,11 @@
   justify-items: center; 
 }
 
+.services-card-container .service-card:nth-child(7) {
+  grid-column: 1 / -1; /* Span the full row */
+  justify-self: center; /* Center the seventh card */
+}
+
 .service-card {
   width: 300px;
   height: 400px;
