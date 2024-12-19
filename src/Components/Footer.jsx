@@ -105,10 +105,10 @@ const Footer = () => {
       <div className="rights">
         <p>
           <span className="brand">
-            <span id="first">Noor</span> Al Abbar
+            <span id="first">Noor</span> Al Abbar 
           </span>
-          | <span id="all-rights"> All rights reserved</span>
-          &copy;
+          |<span id="all-rights"> 2024</span>
+        
         </p>
       </div>
     </>

@@ -105,7 +105,7 @@ const DummyPage = () => {
               <p className="card-sub">
               Essential products designed to support seamless cleaning and maintenance solutions.
               </p>
-              <button className="card-button" onClick={() => handleClick("facilitiesmanagement")}>View Details</button>
+              <button className="card-button" onClick={() => handleClick("tradingproducts")}>View Details</button>
             </div>
             <div className="service-card">
               <img src={industry} alt="Industry-Specific Services" />
