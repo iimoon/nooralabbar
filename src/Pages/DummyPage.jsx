@@ -7,7 +7,7 @@ import img3 from "../assets/images/homepage/img3.jpg";
 import commercial from "../assets/images/homepage/services/commercial.png";
 import demolition from "../assets/images/homepage/services/demolition.png";
 import facilities from "../assets/images/homepage/services/facilities.png";
-import trading from "../assets/images/banners/trading.png"
+import trading from "../assets/images/banners/trading.png";
 import holiday from "../assets/images/homepage/services/holiday.png";
 import industry from "../assets/images/homepage/services/industry.png";
 import about from "../assets/images/homepage/about.png";
@@ -22,16 +22,15 @@ import YASRG from "../assets/logos/clients/YASRG.jpg";
 import CTASection from "../Components/CTASection";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
-import Footer from "../Components/Footer"
+import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 
 const DummyPage = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-  
-    const handleClick = (path) => {
-      navigate(`/${path}`);
-    };
+  const handleClick = (path) => {
+    navigate(`/${path}`);
+  };
   const homeImages = [img1, img2, img3];
   const homeText = [
     {
@@ -43,7 +42,11 @@ const DummyPage = () => {
   return (
     <>
       <Navbar />
-      <Carousel images={homeImages} texts={homeText} targetSectionId="service-main"/>
+      <Carousel
+        images={homeImages}
+        texts={homeText}
+        targetSectionId="service-main"
+      />
       <div className="body-container">
         <div className="services-container">
           <div className="divider"></div>
@@ -61,7 +64,12 @@ const DummyPage = () => {
                 Tailored cleaning solutions for offices, clinics, and schools to
                 maintain a healthy workspace.
               </p>
-              <button className="card-button" onClick={() => handleClick("commercialcleaning")}>View Details</button>
+              <button
+                className="card-button"
+                onClick={() => handleClick("commercialcleaning")}
+              >
+                View Details
+              </button>
             </div>
             <div className="service-card">
               <img src={maintenance} alt="Building Maintenance" />
@@ -70,7 +78,12 @@ const DummyPage = () => {
                 Comprehensive maintenance services, including repairs, painting,
                 and minor civil works.
               </p>
-              <button className="card-button" onClick={() => handleClick("buildingmaintenance")}>View Details</button>
+              <button
+                className="card-button"
+                onClick={() => handleClick("buildingmaintenance")}
+              >
+                View Details
+              </button>
             </div>
             <div className="service-card">
               <img src={demolition} alt="Demolition Services" />
@@ -79,7 +92,12 @@ const DummyPage = () => {
                 Efficient demolition of high-rise structures, with emphasis on
                 safety and environmental compliance.
               </p>
-              <button className="card-button" onClick={() => handleClick("demolition")}>View Details</button>
+              <button
+                className="card-button"
+                onClick={() => handleClick("demolition")}
+              >
+                View Details
+              </button>
             </div>
             <div className="service-card">
               <img src={holiday} alt="Holiday Home Services" />
@@ -88,7 +106,12 @@ const DummyPage = () => {
                 Cleaning, maintenance, and guest management services for
                 short-term rental properties.
               </p>
-              <button className="card-button" onClick={() => handleClick("holidayhome")}>View Details</button>
+              <button
+                className="card-button"
+                onClick={() => handleClick("holidayhome")}
+              >
+                View Details
+              </button>
             </div>
             <div className="service-card">
               <img src={facilities} alt="Facilities Management" />
@@ -97,15 +120,26 @@ const DummyPage = () => {
                 End-to-end property management solutions to enhance the value of
                 buildings.
               </p>
-              <button className="card-button" onClick={() => handleClick("facilitiesmanagement")}>View Details</button>
+              <button
+                className="card-button"
+                onClick={() => handleClick("facilitiesmanagement")}
+              >
+                View Details
+              </button>
             </div>
             <div className="service-card">
               <img src={trading} alt="Trading Products" />
               <p className="card-header">Trading Products</p>
               <p className="card-sub">
-              Essential products designed to support seamless cleaning and maintenance solutions.
+                Essential products designed to support seamless cleaning and
+                maintenance solutions.
               </p>
-              <button className="card-button" onClick={() => handleClick("tradingproducts")}>View Details</button>
+              <button
+                className="card-button"
+                onClick={() => handleClick("tradingproducts")}
+              >
+                View Details
+              </button>
             </div>
             <div className="service-card">
               <img src={industry} alt="Industry-Specific Services" />
@@ -114,7 +148,12 @@ const DummyPage = () => {
                 Customized cleaning and maintenance solutions tailored to
                 specific industries.
               </p>
-              <button className="card-button" onClick={() => handleClick("industryspecific")}>View Details</button>
+              <button
+                className="card-button"
+                onClick={() => handleClick("industryspecific")}
+              >
+                View Details
+              </button>
             </div>
           </div>
         </div>
@@ -136,9 +175,9 @@ const DummyPage = () => {
                 reliable and tailored services that exceed client expectations.
               </p>
               <p>
-                With a strong presence in Dubai and multiple branches under our
-                umbrella, we provide reliable and tailored services that exceed
-                client expectations.
+                We provide exceptional, personalized solutions crafted to
+                address unique client needs, ensuring outstanding results and
+                satisfaction every time.
               </p>
             </div>
             <div className="about-divider" />
@@ -229,7 +268,7 @@ const DummyPage = () => {
             <ContactForm />
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
