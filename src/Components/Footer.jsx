@@ -97,7 +97,7 @@ const Footer = () => {
           <div className="footer-divisions">
             <p>
               Al Abbar Cleaning LLC | Al Abbar Building Maintenance LLC | Noor Al Abbar LLC
-              Trading | Al Waqar Building Demolition 
+              Trading 
             </p>
           </div>
         </div>

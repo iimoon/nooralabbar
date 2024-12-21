@@ -191,7 +191,6 @@ const MainPage = () => {
                   <li>Al Abbar Cleaning Services LLC</li>
                   <li>Al Abbar Building Maintenance LLC</li>
                   <li>Noor Al Abbar Trading LLC</li>
-                  <li>Al Waqar Building Demolition</li>
                 </ul>
               </p>
             </div>
