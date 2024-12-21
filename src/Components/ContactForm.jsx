@@ -23,6 +23,7 @@ const ContactForm = () => {
         body: formData,
       });
       const data = await response.json();
+      console.log("Response from Web3Forms:", data);
 
       if (data.success) {
         toast.success("Form Submitted Successfully!");
