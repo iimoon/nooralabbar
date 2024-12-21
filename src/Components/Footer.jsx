@@ -71,7 +71,7 @@ const Footer = () => {
                   icon={faEnvelope}
                   style={{ fontSize: "1.2rem" }}
                 />
-                <a href="mailto:alabbar04@gmail.com">alabbar04@email.com</a>
+                <a href="mailto:alabbar04@gmail.com">alabbar04@gmail.com</a>
               </div>
               <br />
               <div className="link-section-ctn">
