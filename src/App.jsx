@@ -1,5 +1,5 @@
 import CommercialCleaning from "./Pages/CommercialCleaning";
-import DummyPage from "./Pages/DummyPage";
+import MainPage from "./Pages/MainPage";
 import BuildingMaintenance from "./Pages/BuildingMaintenance";
 import Demolition from "./Pages/Demolition";
 import HolidayHome from "./Pages/HolidayHome";
@@ -22,7 +22,7 @@ function App() {
         <ScrollToTop />
         <ToastContainer />
         <Routes>
-          <Route path="" element={<DummyPage />} />
+          <Route path="" element={<MainPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/commercialcleaning" element={<CommercialCleaning />} />
           <Route

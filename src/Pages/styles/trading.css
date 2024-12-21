@@ -41,12 +41,40 @@
   font-weight: bold;
 }
 
+.products-section li {
+  color: #494646;
+  font-family: Roboto;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
 .trading-container li {
   color: #494646;
   font-family: Roboto;
   font-size: 26px;
   margin-bottom: 8px;
 }
+.trading-container{
+  display: flex;
+  max-width: 100%;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap:20px
+}
+
+.general-cleaning{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-right:90px;
+  gap:30px
+}
+
+.service-section{
+  width: auto;
+  height: auto;
+}
+
 .trading-main {
   margin-top: 60px;
   display: flex;
@@ -71,8 +99,25 @@
     .trading-container{
         width: 95%;
     }
+    .products-section{
+      width: 95%;
+    }
 }
 @media (max-width: 480px) {
+  .trading-container li {
+    font-size: 13px;
+  }
+  .trading-container{
+    gap: 10px;
+  }
+  .general-cleaning{
+    margin-right: 0;
+    width: 100%;
+    gap:10px;
+  }
+  .general-cleaning li{
+    font-size: 13px;
+  }
   .trading-main {
     align-items: center;
     margin-top: 0;
@@ -83,9 +128,17 @@
     flex-direction: column;
     justify-content: center;
   }
-  .trading-container li {
+  .products-section li{
     font-size: 16px;
   }
+
+  .products-section{
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
   #subhead {
     margin-top: 20px;
     font-size: 16px;

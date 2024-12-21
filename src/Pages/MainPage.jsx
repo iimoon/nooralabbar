@@ -25,7 +25,7 @@ import ContactForm from "../Components/ContactForm";
 import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 
-const DummyPage = () => {
+const MainPage = () => {
   const navigate = useNavigate();
 
   const handleClick = (path) => {
@@ -274,4 +274,4 @@ const DummyPage = () => {
   );
 };
 
-export default DummyPage;
+export default MainPage;

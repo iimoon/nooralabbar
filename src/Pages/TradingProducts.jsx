@@ -9,6 +9,7 @@ import house from "../assets/images/products/categories/house.png";
 import cleaning from "../assets/images/products/categories/cleaning.png";
 import CTASection from "../Components/CTASection";
 import Footer from "../Components/Footer";
+import ServiceView from "../Components/ServiceView";
 const TradingProducts = () => {
   return (
     <div>
@@ -25,16 +26,35 @@ const TradingProducts = () => {
       />
       <div className="trading-main">
         <div className="trading-container">
-          <h1 id="subhead">General Cleaning products</h1>
-          <ul>
-            <li>
-              We recommend solutions tailored to your needs, not sell
-              unnecessary products.
-            </li>
-            <li>We work within your budget.</li>
-            <li>Excellent service resting on core values </li>
-          </ul>
+          <div className="general-cleaning">
+            <h1 id="subhead">General Cleaning products</h1>
+            <p id="mainsub">
+              Keeping your space clean and hygienic is essential for a healthy
+              and welcoming environment. Our range of general cleaning products
+              is designed to meet all your cleaning needs, whether for homes,
+              offices, or commercial spaces. These high-quality products are
+              formulated to deliver exceptional cleaning results while being
+              safe and eco-friendly.
+            </p>
+            <ul>
+              <li>
+                We recommend solutions tailored to your needs, not sell
+                unnecessary products.
+              </li>
+              <li>We work within your budget.</li>
+              <li>Excellent service resting on core values </li>
+            </ul>
+          </div>
+          <div className="service-section">
+            <ServiceView
+              id="servicesection "
+              highlightService="Trading Products"
+            />
+          </div>
+        </div>
+        <div className="products-section">
           <h1 id="subhead">Product Categories</h1>
+          <span id="line" />
           <div className="product-ctg-container">
             <div className="product-ctg-card">
               <img src={aerosol} alt="Aerosol" />
@@ -71,13 +91,14 @@ const TradingProducts = () => {
                 high-traffic restrooms to maintain cleanliness and freshness.
               </li>
               <li>
-                <span id="bold">Floor Care:</span>Prevents corrosion and decay by
-                using the correct cleaning chemical.
+                <span id="bold">Floor Care:</span>Prevents corrosion and decay
+                by using the correct cleaning chemical.
               </li>
             </ul>
           </div>
         </div>
       </div>
+
       <div className="CTASection">
         <CTASection />
       </div>

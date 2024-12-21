@@ -1,7 +1,7 @@
 
 .footer {
   font-family: Roboto;
-    background-color: #1a1a1a;
+    background-color: #9b9b9b;
     color: #fff;
     padding: 40px 20px;
   }
@@ -42,12 +42,12 @@
   }
   .footer-services li:hover{
       cursor: pointer;
-      color: #91c01f;
+      color: #2e3f07;
     }
   
   .footer-links li:hover{
     cursor: pointer;
-    color: #91c01f;
+    color: #2e3f07;
   }
   .footer-links li, .footer-services li {
     margin-bottom: 8px;
@@ -60,7 +60,7 @@
   }
   .footer-contact a:hover{
     cursor: pointer;
-    color: #91c01f;
+    color: #2e3f07;
   }
   .link-section-ctn{
     display: flex;
@@ -70,7 +70,7 @@
   .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    background-color: #2a2a2a;
+    background-color: #646363;
   }
   
   .footer-divisions p {
