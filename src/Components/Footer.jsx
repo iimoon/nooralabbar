@@ -57,6 +57,9 @@ const Footer = () => {
               <li onClick={() => handleClick("facilitiesmanagement")}>
                 Facilities Management
               </li>
+              <li onClick={() => handleClick("tradingproducts")}>
+                Trading Products
+              </li>
               <li onClick={() => handleClick("industryspecific")}>
                 Industry-Specific Services
               </li>
