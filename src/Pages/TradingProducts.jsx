@@ -16,8 +16,8 @@ const TradingProducts = () => {
       <Navbar />
       <StaticImageView
         image={tradingproducts}
-        heading="Industry-Specific Solutions"
-        subheading="Tailored Solutions for Every Industry Need"
+        heading="General Trading Products"
+        subheading="Tailored Cleaning Products for your needs"
         buttons={[
           { text: "Get a Free Quote", link: "#", type: "primary" },
           { text: "Learn More", link: "#", type: "secondary" },
